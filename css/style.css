@@ -1,0 +1,54 @@
+body {
+    background-color: #5797ff ; 
+background-image: url("../images/map10.png");
+background-size: 1280px 760px;
+background-repeat: no-repeat;
+}
+header {
+    font-size: 70px;
+    color:  #fcea76;
+    font-family: cursive;
+    margin-bottom: -100px;
+    width: 400px;
+}
+.dialogbox {
+    float: right;
+background-image: linear-gradient(rgba(43, 64, 250, 0.5), rgb(0, 4, 37));
+border: groove 8px #ababab;
+height: 253px;
+width: 640px;
+}
+p {
+    font-family: 'Press Start 2P';
+    color: #c2ac21;
+    font-size: 18px;
+}
+
+.dialogbox p {
+    padding-top: 100px;
+    padding-left: 20px;
+   /*font-weight: bold; */  
+}
+
+.playerbox {
+background-image: linear-gradient(rgba(78, 78, 78, 0.5), rgb(22, 22, 22));
+border: groove 8px #ababab;
+margin-top: 350px;
+height: 225px;
+width: 500px;
+position: fixed;
+}
+
+.playerbox p {
+    padding-top: 100px;
+    float: right;
+    padding-right: 50px;
+    color: #c2ac21;
+    font-size: 18px;
+    /*font-weight: bold; */  
+}
+.playerbox img {
+    border: groove 6px #ababab; 
+    height: 216px;
+    width: 173px;
+}
