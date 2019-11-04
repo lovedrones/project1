@@ -1,9 +1,17 @@
+* {
+  
+}
+:root {
+
+}
+
 body {
     background-color: #5797ff ; 
 background-image: url("../images/map10.png");
 background-size: 1280px 760px;
 background-repeat: no-repeat;
 }
+
 header {
     font-size: 70px;
     color:  #fcea76;
@@ -11,13 +19,15 @@ header {
     margin-bottom: -100px;
     width: 400px;
 }
+
 .dialogbox {
     float: right;
-background-image: linear-gradient(rgba(43, 64, 250, 0.5), rgb(0, 4, 37));
+background-image: linear-gradient(rgba(248, 81, 9, 0.5), rgb(44, 2, 2));
 border: groove 8px #ababab;
-height: 253px;
+height: 225px;
 width: 640px;
 }
+
 p {
     font-family: 'Press Start 2P';
     color: #c2ac21;
@@ -27,11 +37,18 @@ p {
 .dialogbox p {
     padding-top: 100px;
     padding-left: 20px;
-   /*font-weight: bold; */  
+   
+}
+.dialogbox img {
+    border: groove 6px #ababab; 
+    float: right;
+    height: 216px;
+    width: 173px;
+    margin-top: -190px;
 }
 
 .playerbox {
-background-image: linear-gradient(rgba(78, 78, 78, 0.5), rgb(22, 22, 22));
+background-image: linear-gradient(rgba(43, 64, 250, 0.5), rgb(0, 4, 37));
 border: groove 8px #ababab;
 margin-top: 350px;
 height: 225px;
@@ -40,15 +57,40 @@ position: fixed;
 }
 
 .playerbox p {
-    padding-top: 100px;
     float: right;
+    padding-top: 100px;
     padding-right: 50px;
     color: #c2ac21;
     font-size: 18px;
-    /*font-weight: bold; */  
 }
+
 .playerbox img {
     border: groove 6px #ababab; 
     height: 216px;
     width: 173px;
 }
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+#taskbox {
+    float: right;
+    margin-left: 350px;
+    margin-top: 90px;
+    margin-right: 120px;
+    height:400px;
+    width:500px
+}
+
+.ans-btns {
+    background-color: rgba(44, 2, 2, 0.7);
+    height:150px; 
+    width:300px;
+    color: #c2ac21;
+    border: groove 6px #ababab; 
+    border-radius: 25px;
+    font-family: 'Press Start 2P';
+   }
