@@ -10,29 +10,46 @@
     </head>
     <body>
        <header style="background-color:  rgba(0, 255, 64, 0.25);">Heart Of Code</header>
-  <div class="dialogbox">
-        <p>Missing something, <br>
-            <br> &nbsp;&nbsp;    Young Codesmith?</p> 
-            <img src="images/playericon1.png"></img>
+
+       <script>
+        // var typed1 = new Typed('.dialogbox p', {
+        //   // stringsElement: '#typed-strings',  
+        // });
+        // var typed2 = new Typed('.playerbox p', {
+        //   // stringsElement: '#typed-strings',
+          
+        // });
+      </script>
+        
+<div class="dialogbox" id="typed-strings">
+    <h2>Dark Code-Knight</h2>
+    <p></p>
+   <img src="images/playericon1.png"></img>
     </div>
-<div class="playerbox">
-    <p>
-?????
-    </p>
+<span id="typed"></span>
+<div class="playerbox" id="typed-strings">
+  <h2>Young CodeSmith</h2>
+    <p></p>
     <img src="images/playericon1.png"></img>
 </div>
+
+    
   <script defer src="js/main.js"></script>
   <div class="flex-container" id="taskbox">
+<div class="guide-btns">
+<button id="prev" onclick="prev()" class="prev hide"> Previous</button>
+<button id="next" onclick="next()" class="next hide">Next</button>
+        </div>
 <div id ="tasks" class="hide"> </div>
 <div id="answers" class="btn-grid"> 
-<button class="ans-btns" id="btn1">Answer 1</button>
-<button class="ans-btns" id="btn2">Answer 2</button>
-<button class="ans-btns" id="btn3">Answer 3</button>
-<button class="ans-btns" id="btn4">Answer 4</button>
+  <button class="ans-btns" id="btn1">Answer 1</button>
+  <button class="ans-btns" id="btn2">Answer 2</button>
+  <button class="ans-btns" id="btn3">Answer 3</button>
+  <button class="ans-btns" id="btn4">Answer 4</button>
 </div>
 </div>
-<button id="prev" class="prev hide">Previous</button>
-<button id="next" class="next hide">Next</button>
 
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     </body>
 </html>

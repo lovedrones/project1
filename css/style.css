@@ -5,7 +5,9 @@
 
 }
 
+
 body {
+    -webkit-font-smoothing: antialiased;
     background-color: #5797ff ; 
 background-image: url("../images/map10.png");
 background-size: 1280px 760px;
@@ -25,26 +27,44 @@ header {
 background-image: linear-gradient(rgba(248, 81, 9, 0.5), rgb(44, 2, 2));
 border: groove 8px #ababab;
 height: 225px;
-width: 640px;
+width: 600px;
 }
 
 p {
     font-family: 'Press Start 2P';
     color: #c2ac21;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .dialogbox p {
-    padding-top: 100px;
+    padding-top: 38px;
     padding-left: 20px;
-   
+    width: 300px;
+    height: 100px;
+}
+h2 {
+    font-family: 'Press Start 2P';
+    font-size: 15px;
+}
+.dialogbox h2 {
+    width: 300px;
+    height: 30px;
+    border-bottom: groove 4px #ababab; 
+    color: #c2ac21;
+    margin-bottom: 15px;
+    margin-top: -1px;
+    background-color: rgba(44, 2, 2,0.5);
+    padding-left: 10px;
+    padding-top: 15px;
+    
 }
 .dialogbox img {
-    border: groove 6px #ababab; 
+    border: groove 4px #ababab; 
     float: right;
-    height: 216px;
+    height: 215px;
     width: 173px;
-    margin-top: -190px;
+    margin-top: -216px;
+    
 }
 
 .playerbox {
@@ -59,15 +79,28 @@ position: fixed;
 .playerbox p {
     float: right;
     padding-top: 100px;
-    padding-right: 50px;
+    padding-right: 30px;
     color: #c2ac21;
-    font-size: 18px;
+    font-size: 15px;
 }
-
+.playerbox h2 {
+    float:right;
+    width: 250px;
+    height: 30px;
+    border-bottom: groove 4px #ababab; 
+    color: #c2ac21;
+    margin-bottom: -100px;
+    margin-top: -1px;
+    background-color: rgba(0, 4, 37, 0.5);
+    padding-top: 15px;
+    padding-right: -130px;
+    padding-left: 20px
+}
 .playerbox img {
-    border: groove 6px #ababab; 
+    border: groove 4px #ababab; 
     height: 216px;
     width: 173px;
+    margin-left: -10px;
 }
 
 .btn-grid {
@@ -93,4 +126,11 @@ position: fixed;
     border: groove 6px #ababab; 
     border-radius: 25px;
     font-family: 'Press Start 2P';
+   }
+ .ans-btns:hover {
+    background-color: rgb(80, 58, 230)
+}
+   .guide-btns{
+       float: right;
+       margin-top: -50px;
    }
