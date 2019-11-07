@@ -7,49 +7,50 @@
         <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css"></link>
         <title>Heart Of Code</title>
+        <embed loop="true" src="https://soundimage.org/wp-content/uploads/2014/09/Our-Mountain_v003.mp3" hidden="true" type="video/quicktime"></embed>
+       
+    
     </head>
     <body>
+        <div class="starter">
+            <div id="startext">
+              Heart Of Code<br>
+              <button id="startbut" onclick="startGame(); reveal();" class="starter">START!</button><br>
+             </div>
+             
+          </div> 
        <header style="background-color:  rgba(0, 255, 64, 0.25);">Heart Of Code</header>
 
-       <script>
-        // var typed1 = new Typed('.dialogbox p', {
-        //   // stringsElement: '#typed-strings',  
-        // });
-        // var typed2 = new Typed('.playerbox p', {
-        //   // stringsElement: '#typed-strings',
-          
-        // });
-      </script>
-        
-<div class="dialogbox" id="typed-strings">
+    
+       
+<div id="dialogbox" class="typed-strings">
     <h2>Dark Code-Knight</h2>
-    <p></p>
+    <p id="quest"></p>
    <img src="images/playericon1.png"></img>
     </div>
-<span id="typed"></span>
-<div class="playerbox" id="typed-strings">
+  
+
+<div id="playerbox" class="typed-strings">
   <h2>Young CodeSmith</h2>
     <p></p>
     <img src="images/playericon1.png"></img>
 </div>
 
-    
-  <script defer src="js/main.js"></script>
-  <div class="flex-container" id="taskbox">
+<div class="flex-container" id="taskbox">
+  
 <div class="guide-btns">
-<button id="prev" onclick="prev()" class="prev hide"> Previous</button>
-<button id="next" onclick="next()" class="next hide">Next</button>
+<button id="next-btn" onclick="next()" class="next-btn btn">Next</button>
         </div>
-<div id ="tasks" class="hide"> </div>
+        <div id="hidden-question" class="hide">
 <div id="answers" class="btn-grid"> 
-  <button class="ans-btns" id="btn1">Answer 1</button>
-  <button class="ans-btns" id="btn2">Answer 2</button>
-  <button class="ans-btns" id="btn3">Answer 3</button>
-  <button class="ans-btns" id="btn4">Answer 4</button>
-</div>
+  <button class="ans-btns">Answer 1</button>
+  <button class="ans-btns" >Answer 2</button>
+  <button class="ans-btns" >Answer 3</button>
+  <button class="ans-btns">Answer 4</button>
+</div></div>
 </div>
 
-
+<script defer src="js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     </body>
 </html>

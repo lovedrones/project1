@@ -16,51 +16,56 @@
 // ]
 
 
-const questions = [
+const challenges =[
     {
         question: "which one of these illustrates the use of a String Datatype ",
-        answers: [
-            { text: " {} ", correct: false },
-            { text: " false ", correct: false },
-            { text: " 'Car' ",  correct: true},
-            { text: " 2 ", correct: false },
-        ]
+        choices: {
+            a: " {} ", 
+            b: " false ",
+            c: " 'Car' ",
+            d: " 2 "
+        },
+        answer: " 'Car' "
     },
     {
         question: " What is the length of an empty string ",
-        answers: [
-          { text: " Number ", correct: false },
-           { text: " Undefined ", correct: false },
-           { text: " 0 ", correct: true },
-           { text: " Null ", correct: false},
-        ],
+        choices: {
+            a: " Number ", 
+            b: " Undefined ",
+            c: " 0 ",
+            d: " Null "
+        },
+        answer: " 0 "
     },
     {
-        question: " Which of the following is NOT an advantage of using a function? ",
-        answers: [
-         { text: " Functions always take in inputs through parameters", correct: true }, 
-        { text: " Statements allow can grouped together to perform a specific task.", correct: false },
-        { text: " Functions are reusable", correct: false},
-        { text: "Steps can be stored and not executed each time a page loads. ", correct: false},
-        ]
-          },
+        question: " Which of the following is <strong>not</strong> an advantage of using a function? ",
+        choices: {
+            a: " Functions always take in inputs through parameters", 
+            b: " Statements allow can grouped together to perform a specific task.",
+            c: " Functions are reusable",
+            d: "Steps can be stored and not executed each time a page loads. "
+        },
+        answer: "Functions always take in inputs through parameters "
+    },
     {
-        question: " One advantage of using ordinary arrays over using objects is that arrays allow us to associate keys with values, making it easier to access data. ",
-        answers: [
-        { text: "True", correct: false },
-           { text: "False" ,correct:  true },
-           { text: "Both", correct: false },
-           { text: "All of the Above", correct: false },
-       ]
+        question: " True or False: One advantage of using ordinary arrays over using objects is that arrays allow us to associate keys with values, making it easier to access data. ",
+        choices: {
+            a: "True ", 
+            b: "False ",
+            c: "Both ",
+            d: "All of the Above "
+        },
+        answer: "False "
     },
     {
         question: "Please complete the following: When using objects, values are accessed by __ ? ",
-        answers: [
-         { text: "Indices", correct: false },
-           { text: "Keys ", correct: true },
-           { text: "Properties ", correct: false },
-           { text: "Methods ", correct: false },
-      ]
+        choices: {
+            a: "Indices", 
+            b: "Keys ",
+            c: "Properties ",
+            d: "Methods "
+        },
+        answer: "Keys "
     },
 ]
 
@@ -73,7 +78,9 @@ let shuffledQuestions, currentQuestionIndex
 const startButton = document.querySelector('.starter')
 const hid = document.getElementById('hidden-question')
 const nextButton = document.getElementById('next-btn')
-const questionElement = document.getElementById('quest')
+const  header = document.getElementById('header')
+const dia = document.getElementById('typed-strings')
+const questionElement = document.getElementById('.dialogbox')
 const answerButtonsElement = document.getElementById('answers')
 /*----- event listeners -----*/
 
@@ -87,7 +94,7 @@ nextButton.addEventListener('click', () => {
 
 function startGame() {
     startButton.classList.add('hide');
-  var typed1 = new Typed('#quest', {
+  var typed1 = new Typed('.dialogbox p', {
         // Waits 1000ms after typing "First"
         strings: [ 
            'Missing Something, <br> Young Codesmith? ^1000',
@@ -97,48 +104,48 @@ function startGame() {
           startDelay: 1000,
         typeSpeed: 50,
        });
-       var typed2 = new Typed('#playerbox p', {
+       var typed2 = new Typed('.playerbox p', {
         // Waits 1000ms after typing "First"
         strings: [
     '???? ^4500',
     'WHAT!? ^1000 <br> WHERE... <br> WHERE IS SHE!? ^3500 ',
       '... ?'
     ],
-        startDelay: 4500,
-        typeSpeed: 70,
+        startDelay: 4000,
+        typeSpeed: 100,
        });
        
 };
 
 function next() {
-hid.classList.remove('hide');
-shuffledQuestions = questions.sort(() => Math.random() - .5);
-currentQuestionIndex = 0;
-setNextQuestion();
+hid.classList.remove('hide')
+shuffledQuestions = challenges.sort(() => Math.random() - .6)
+currentQuestionIndex = 0
+setNextQuestion()
 };
 
 function setNextQuestion() {
-    resetState();
-    showQuestion(shuffledQuestions[currentQuestionIndex]);
+    resetState()
+    showQuestion(shuffledQuestions[currentQuestionIndex])
   }
 
   function showQuestion(question) {
-    questionElement.innerText = question.question;
+    questionElement.innerText = question.question
     question.answers.forEach(answer => {
-      const button = document.createElement('button');
-      button.innerText = answer.text;
-      button.classList.add('ans-btns');
+      const button = document.createElement('button')
+      button.innerText = answer.text
+      button.classList.add('ans-btns')
       if (answer.correct) {
-        button.dataset.correct = answer.correct;
-       }
-      button.addEventListener('click', selectAnswer);
-      answerButtonsElement.appendChild(button);
+        button.dataset.correct = answer.correct
+      }
+      button.addEventListener('click', selectAnswer)
+      answerButtonsElement.appendChild(button)
     })
   }
   
   function resetState() {
     clearStatusClass(document.body)
-    // nextButton.classList.add('hide')
+    nextButton.classList.add('hide')
     while (answerButtonsElement.firstChild) {
       answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
@@ -162,13 +169,14 @@ function setNextQuestion() {
     clearStatusClass(element)
     if (correct) {
       element.classList.add('correct')
-
     } else {
       element.classList.add('wrong')
     }
   }
-  function clearStatusClass(element) {
-    element.classList.remove('correct')
-    element.classList.remove('wrong')
-  }
+function answers() {
+console.log('answered');
+};
 
+function health() {
+    
+}

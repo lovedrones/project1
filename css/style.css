@@ -2,42 +2,82 @@
   
 }
 :root {
-
+    --hue-wrong: 0;
+    --hue-correct: 145;
 }
-
 
 body {
     -webkit-font-smoothing: antialiased;
     background-color: #5797ff ; 
 background-image: url("../images/map10.png");
-background-size: 1280px 760px;
+background-size: cover;
 background-repeat: no-repeat;
 }
-
+div.starter{
+    position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+#startext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 70px;
+    color: #fcea76;;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-family: cursive;
+  }
+#startbut{
+    position: absolute;
+    left: 50%;
+    margin-top: 40px;
+    height: 25%;
+    width: 35%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-size: 15px;
+  border-radius: 15% ;
+    background-color: rgba(65, 26, 3, 0.7);
+    color: #fcea76;
+   font-weight: bold;
+    border: solid 4px #fcea76;
+    font-family: cursive;
+}
 header {
     font-size: 70px;
     color:  #fcea76;
     font-family: cursive;
     margin-bottom: -100px;
     width: 400px;
+    animation: fadein 6s;
 }
 
-.dialogbox {
+#dialogbox {
     float: right;
 background-image: linear-gradient(rgba(248, 81, 9, 0.5), rgb(44, 2, 2));
 border: groove 8px #ababab;
 height: 225px;
 width: 600px;
+animation: fadein 3s;
 }
+
 
 p {
     font-family: 'Press Start 2P';
     color: #c2ac21;
-    font-size: 15px;
+    font-size: 16px;
 }
 
-.dialogbox p {
-    padding-top: 38px;
+#quest {
+    padding-top: 20px;
     padding-left: 20px;
     width: 300px;
     height: 100px;
@@ -46,7 +86,7 @@ h2 {
     font-family: 'Press Start 2P';
     font-size: 15px;
 }
-.dialogbox h2 {
+#dialogbox h2 {
     width: 300px;
     height: 30px;
     border-bottom: groove 4px #ababab; 
@@ -58,32 +98,33 @@ h2 {
     padding-top: 15px;
     
 }
-.dialogbox img {
+#dialogbox img {
     border: groove 4px #ababab; 
     float: right;
     height: 215px;
     width: 173px;
-    margin-top: -216px;
-    
+    margin-top: -200px;
 }
 
-.playerbox {
+#playerbox {
+    
 background-image: linear-gradient(rgba(43, 64, 250, 0.5), rgb(0, 4, 37));
 border: groove 8px #ababab;
 margin-top: 350px;
 height: 225px;
 width: 500px;
 position: fixed;
+animation: fadein 10s;
 }
 
-.playerbox p {
+#playerbox p {
     float: right;
     padding-top: 100px;
     padding-right: 30px;
     color: #c2ac21;
-    font-size: 15px;
+    font-size: 16px;
 }
-.playerbox h2 {
+#playerbox h2 {
     float:right;
     width: 250px;
     height: 30px;
@@ -96,7 +137,7 @@ position: fixed;
     padding-right: -130px;
     padding-left: 20px
 }
-.playerbox img {
+#playerbox img {
     border: groove 4px #ababab; 
     height: 216px;
     width: 173px;
@@ -110,6 +151,7 @@ position: fixed;
 }
 
 #taskbox {
+   
     float: right;
     margin-left: 350px;
     margin-top: 90px;
@@ -126,11 +168,35 @@ position: fixed;
     border: groove 6px #ababab; 
     border-radius: 25px;
     font-family: 'Press Start 2P';
+    font-size: 12px;
    }
- .ans-btns:hover {
+.ans-btns:hover {
     background-color: rgb(80, 58, 230)
 }
-   .guide-btns{
+.ans-btns.correct {
+    background-color: limegreen;
+    color: white;
+}
+.ans-btns.wrong {
+    background-color: red;
+}
+
+.guide-btns{
        float: right;
        margin-top: -50px;
-   }
+    }
+
+.hide {
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+}
+@keyframes fadein {
+ 0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.5; }
+  80% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
