@@ -7,11 +7,12 @@ He's greeted by a evil knight, who let's him know his Princess has been captured
 In order to have her returned he must pass the Dark Code-Knight's quiz challenge. 
 
 
-//wireframe
+# wireframe
 ![](https://i.imgur.com/LzvhTQ8.jpg)
 
 
-//landing page
+# ScreenShots
+landing page
 
 ![](https://i.imgur.com/eXeb9Kw.png)
 
@@ -21,16 +22,16 @@ In order to have her returned he must pass the Dark Code-Knight's quiz challenge
 //QUIZ
 ![](https://i.imgur.com/wyhTYbT.png)
 
-Technologies Used:
+#Technologies Used:
 
 -JavaScript
 -HTMl
 -CSS
 
-Deployed Link:
+#Deployed Link:
 https://lovedrones.github.io/project1/game.html
 
-Next Steps:
+#Next Steps:
 
 -Scoring System
 -Better Win and Loss exclamation 
