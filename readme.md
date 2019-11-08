@@ -19,3 +19,17 @@ In order to have her returned he must pass the Dark Code-Knight's quiz challenge
 //QUIZ
 ![](https://i.imgur.com/wyhTYbT.png)
 
+Technologies Used:
+
+-JavaScript
+-HTMl
+-CSS
+
+Deployed Link:
+https://lovedrones.github.io/project1/game.html
+
+Next Steps:
+
+-Scoring System
+-Better Win and Loss exclamation 
+-more sceneory and characters
