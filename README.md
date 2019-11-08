@@ -27,7 +27,7 @@ landing page
 -HTMl
 -CSS
 
-#Deployed Link:
+# Deployed Link:
 https://lovedrones.github.io/project1/game.html
 
 # Next Steps:
