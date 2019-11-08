@@ -11,14 +11,15 @@ In order to have her returned he must pass the Dark Code-Knight's quiz challenge
 
 
 # ScreenShots
-landing page
+
+Landing page
 
 ![](https://i.imgur.com/eXeb9Kw.png)
 
-//game started
+Game started
 ![](https://i.imgur.com/JuLSVl1.png)
 
-//QUIZ
+QUIZ
 ![](https://i.imgur.com/wyhTYbT.png)
 
 # Technologies Used:
