@@ -1,5 +1,5 @@
 * {
-  
+    box-sizing: border-box;
 }
 :root {
     --hue-wrong: 0;
@@ -13,6 +13,7 @@ background-image: url("../images/map10.png");
 background-size: cover;
 background-repeat: no-repeat;
 }
+  
 div.starter{
     position: fixed;
   width: 100%;
@@ -65,7 +66,7 @@ header {
 background-image: linear-gradient(rgba(248, 81, 9, 0.5), rgb(44, 2, 2));
 border: groove 8px #ababab;
 height: 225px;
-width: 600px;
+width: 550px;
 animation: fadein 3s;
 }
 
@@ -96,14 +97,15 @@ h2 {
     background-color: rgba(44, 2, 2,0.5);
     padding-left: 10px;
     padding-top: 15px;
+    padding-bottom: 15px;
     
 }
 #dialogbox img {
     border: groove 4px #ababab; 
     float: right;
     height: 215px;
-    width: 173px;
-    margin-top: -200px;
+    width: 175px;
+    margin-top: -166px;
 }
 
 #playerbox {
@@ -135,7 +137,8 @@ animation: fadein 10s;
     background-color: rgba(0, 4, 37, 0.5);
     padding-top: 15px;
     padding-right: -130px;
-    padding-left: 20px
+    padding-left: 20px;
+    padding-bottom: 15px;
 }
 #playerbox img {
     border: groove 4px #ababab; 
@@ -200,3 +203,14 @@ animation: fadein 10s;
   80% { opacity: 0.9; }
   100% { opacity: 1; }
 }
+@media (max-width: 700px) {
+    #dialogbox, #playerbox, #taskbox, header{   
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 700px) {
+     header{   
+     visibility: hidden;;
+    }
+  }

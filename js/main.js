@@ -1,21 +1,5 @@
 /*----- constants -----*/
 
-// const diaLog =[
-//     {
-//         vill: 'Missing Something, <br> Young Codesmith?',
-//         codeSmith: '????',
-//         },
-//     {
-//         vill: 'Well, Ill be damned, too busy to notice your Princess is gone!?'',
-//         codeSmith: 'WHAT!?<br> WHERE!? <br> WHERE IS SHE!? ',
-//         },
-//     {
-//         vill: 'Ill tell you,<br>but youll have to tell me some things first...',
-//         codeSmith: '...?',
-//         }
-// ]
-
-
 const questions = [
     {
         question: "which one of these illustrates the use of a String Datatype ",
@@ -77,6 +61,8 @@ const questionElement = document.getElementById('quest')
 const answerButtonsElement = document.getElementById('answers')
 /*----- event listeners -----*/
 
+
+
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
@@ -84,6 +70,14 @@ nextButton.addEventListener('click', () => {
 })
 
 /*----- functions -----*/
+const bgPlayer = document.getElementById('bg-player');
+const bgCheckbox = document.querySelector('input[type="checkbox"]');
+
+bgCheckbox.addEventListener('change', handleBgChanged);
+
+ function handleBgChanged() {
+  bgCheckbox.checked ? bgPlayer.play() : bgPlayer.pause();
+}
 
 function startGame() {
     startButton.classList.add('hide');
@@ -91,7 +85,7 @@ function startGame() {
         // Waits 1000ms after typing "First"
         strings: [ 
            'Missing Something, <br> Young Codesmith? ^1000',
-        'Well, Ill be damned, too busy to notice your Princess is gone! ^5000',
+        'Well, Ill be damned, too busy to notice your Princess is gone! ^4000',
          'Ill tell you,<br>but youll have to tell me some things first...',
           ],
           startDelay: 1000,
@@ -101,11 +95,11 @@ function startGame() {
         // Waits 1000ms after typing "First"
         strings: [
     '???? ^4500',
-    'WHAT!? ^1000 <br> WHERE... <br> WHERE IS SHE!? ^3500 ',
+    'WHAT!? ^500 <br> WHERE... <br> WHERE IS SHE!? ^5000 ',
       '... ?'
     ],
-        startDelay: 4500,
-        typeSpeed: 70,
+        startDelay: 4700,
+        typeSpeed: 50,
        });
        
 };
@@ -162,11 +156,11 @@ function setNextQuestion() {
     clearStatusClass(element)
     if (correct) {
       element.classList.add('correct')
-
     } else {
       element.classList.add('wrong')
     }
   }
+
   function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
