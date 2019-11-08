@@ -22,7 +22,7 @@ landing page
 //QUIZ
 ![](https://i.imgur.com/wyhTYbT.png)
 
-#Technologies Used:
+# Technologies Used:
 
 -JavaScript
 -HTMl
@@ -31,7 +31,7 @@ landing page
 #Deployed Link:
 https://lovedrones.github.io/project1/game.html
 
-#Next Steps:
+# Next Steps:
 
 -Scoring System
 -Better Win and Loss exclamation 
