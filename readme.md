@@ -1,17 +1,20 @@
-"Heart of Code"
+
+
+# "Heart of Code"
 An RPG or a just a quiz game ?
 Heart of Code is about a Young 'CodeSmith', living in a small village town named Codealot.
 He's greeted by a evil knight, who let's him know his Princess has been captured.
 In order to have her returned he must pass the Dark Code-Knight's quiz challenge. 
 
 
-//wireframe
+# wireframe
 ![](https://i.imgur.com/LzvhTQ8.jpg)
 
 
-//landing page
+# ScreenShots
+landing page
 
-![] (https://i.imgur.com/eXeb9Kw.png)
+![](https://i.imgur.com/eXeb9Kw.png)
 
 //game started
 ![](https://i.imgur.com/JuLSVl1.png)
@@ -19,16 +22,16 @@ In order to have her returned he must pass the Dark Code-Knight's quiz challenge
 //QUIZ
 ![](https://i.imgur.com/wyhTYbT.png)
 
-Technologies Used:
+# Technologies Used:
 
 -JavaScript
 -HTMl
 -CSS
 
-Deployed Link:
+#Deployed Link:
 https://lovedrones.github.io/project1/game.html
 
-Next Steps:
+# Next Steps:
 
 -Scoring System
 -Better Win and Loss exclamation 
