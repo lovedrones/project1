@@ -25,7 +25,7 @@ QUIZ
 # Technologies Used:
 
 -JavaScript
--HTMl
+-HTML
 -CSS
 
 # Deployed Link:
