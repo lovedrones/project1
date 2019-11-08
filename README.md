@@ -17,10 +17,10 @@ Landing page
 ![](https://i.imgur.com/eXeb9Kw.png?1)
 
 Game started
-![](https://i.imgur.com/JuLSVl1.png)
+![](https://i.imgur.com/JuLSVl1.png?1)
 
 QUIZ
-![](https://i.imgur.com/wyhTYbT.png)
+![](https://i.imgur.com/wyhTYbT.png?1)
 
 # Technologies Used:
 
