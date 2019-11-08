@@ -14,7 +14,7 @@ In order to have her returned he must pass the Dark Code-Knight's quiz challenge
 
 Landing page
 
-![](https://i.imgur.com/eXeb9Kw.png)
+![](https://i.imgur.com/eXeb9Kw.png?1)
 
 Game started
 ![](https://i.imgur.com/JuLSVl1.png)
