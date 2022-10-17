@@ -6,9 +6,6 @@ He's greeted by a evil knight, who let's him know his Princess has been captured
 In order to have her returned he must pass the Dark Code-Knight's quiz challenge. 
 
 
-# wireframe
-![](https://i.imgur.com/LzvhTQ8.jpg)
-
 
 # ScreenShots
 
